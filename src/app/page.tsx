@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 px-6 py-16">
       <div className="mx-auto max-w-5xl">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-          Neighborhood Listing Platform
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 ">
+          Neighborhood Listing Platform - Development Test
         </h1>
 
         <p className="mt-4 max-w-2xl text-lg text-gray-600">
