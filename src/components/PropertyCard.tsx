@@ -15,6 +15,7 @@ export default function PropertyCard({
   alt={property.imageAlt}
   width={800}
   height={450}
+  loading="eager"
   className="mb-4 aspect-video w-full object-cover"
 />
 

@@ -120,3 +120,73 @@ The AI-generated suggestions were not accepted without testing.
 
 
 
+
+
+
+---
+
+## Lab 2 — Component and Accessibility Review
+
+### Component Work
+
+AI assistance was used to propose and review reusable TypeScript components for the neighborhood listing interface.
+
+The components created were:
+
+- `PropertyCard`
+- `SponsorBanner`
+- `SearchFilters`
+
+Shared `Property` and `Sponsor` TypeScript interfaces were created in `src/types/index.ts`.
+
+The page renders three sample properties using `.map()` with stable property IDs as React keys. The listing grid uses responsive Tailwind classes so that it displays one column on small screens, two columns on medium screens, and three columns on large screens.
+
+### ChatGPT Accessibility Review
+
+**Prompt:**  
+Review the React components for semantic HTML, WCAG-oriented keyboard access, responsive behavior, and TypeScript safety. Identify issues, explain why they matter, recommend the smallest change, and provide a manual test. Do not claim compliance from code alone.
+
+**Output used:**  
+Used the review to check semantic HTML, heading structure, accessible labels, descriptive image alt text, visible focus styles, keyboard navigation, and responsive behavior.
+
+**Output rejected:**  
+No suggested change was accepted automatically. Recommendations were checked against the actual components and browser behavior before changes were made.
+
+**Verification:**  
+`PropertyCard` uses `<article>`, a heading, descriptive image `alt` text, a list of property facts, and a descriptive property link. `SponsorBanner` uses `<aside>`, a visible "Sponsored" label, a heading, and a descriptive link. `SearchFilters` uses a `<form>`, explicit `<label>` elements connected to native `<select>` controls, and a native submit button.
+
+Manual keyboard testing confirmed visible focus, logical Tab navigation, keyboard operation of the filter controls, activation of the Apply filters button with Enter, and descriptive property and sponsor links.
+
+### Gemini Accessibility Review
+
+**Prompt:**  
+Review the PropertyCard, SponsorBanner, SearchFilters, and page for semantic HTML, WCAG-oriented keyboard access, responsive behavior, and TypeScript safety. Return the issue, why it matters, the smallest recommended change, and a manual test. Do not claim compliance from code alone. Focus on issues that can be verified in the browser.
+
+**Output used:**  
+Used Gemini's review as a second accessibility check and compared its suggestions against the actual implementation and browser testing.
+
+**Output rejected:**  
+Gemini suggested checking for nested interactive controls in `PropertyCard`, but the component does not contain nested interactive elements. Gemini suggested adding an `<aside>` to `SponsorBanner`, but the component already uses `<aside>`. Gemini suggested replacing custom filter controls with native controls, but `SearchFilters` already uses native `<select>` elements and a native `<button>`. Gemini suggested adding a `<main>` landmark, but the page already uses `<main>`.
+
+**Verification:**  
+The suggested issues were inspected against the actual source code and tested in the browser rather than being accepted automatically.
+
+### Accessibility and Responsive Testing
+
+- Lighthouse accessibility score: **100**
+- Keyboard navigation tested with Tab and Shift+Tab.
+- Filter controls were opened and changed using the keyboard.
+- Apply filters was activated using Enter.
+- Property and sponsor links were keyboard reachable and had descriptive link text.
+- Responsive layout tested at approximately 400px, 800px, and 1517px widths.
+- 400px displayed one property column.
+- 800px displayed two property columns.
+- 1517px displayed three property columns.
+- Property images loaded successfully after configuring the approved Unsplash image hostname in `next.config.ts`.
+- `npm run lint` completed successfully with no errors or warnings.
+
+A React hydration warning appeared in the development console because browser-extension attributes were added to the page. The warning did not affect the Lighthouse accessibility score or the manual keyboard and responsive tests.
+
+### Human Verification
+
+AI suggestions were treated as drafts and were verified against the actual code and browser behavior. Changes were made only after testing the result.
