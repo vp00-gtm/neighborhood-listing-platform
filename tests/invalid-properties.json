@@ -1,0 +1,70 @@
+[
+  {
+    "address": {
+      "street": "100 Test Street",
+      "city": "Riverside",
+      "state": "CA",
+      "zip_code": "92501"
+    },
+    "price": 2500,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "square_feet": 1100,
+    "amenities": [
+      "parking"
+    ],
+    "local_sponsors": []
+  },
+  {
+    "property_id": "INVALID-002",
+    "address": {
+      "street": "200 Test Street",
+      "city": "Pasadena",
+      "state": "CA",
+      "zip_code": "91101"
+    },
+    "price": -500,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "square_feet": 900,
+    "amenities": [
+      "laundry"
+    ],
+    "local_sponsors": []
+  },
+  {
+    "property_id": "INVALID-003",
+    "address": {
+      "street": "300 Test Street",
+      "city": "Glendale",
+      "state": "CA",
+      "zip_code": "9120"
+    },
+    "price": 2200,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "square_feet": 800,
+    "amenities": [
+      "parking"
+    ],
+    "local_sponsors": []
+  },
+  {
+    "property_id": "INVALID-004",
+    "address": {
+      "street": "400 Test Street",
+      "city": "Burbank",
+      "state": "CA",
+      "zip_code": "91502"
+    },
+    "price": 2400,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "square_feet": 1000,
+    "amenities": [
+      "parking"
+    ],
+    "local_sponsors": [],
+    "unknown_field": "This field is not allowed"
+  }
+]
