@@ -1,0 +1,124 @@
+[
+  {
+    "property_id": "PROP-001",
+    "address": {
+      "street": "100 Maple Street",
+      "city": "Springfield",
+      "state": "OR",
+      "zip_code": "97477"
+    },
+    "price": 275000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1500,
+    "amenities": [
+      "Hardwood Floors",
+      "In-unit Laundry"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SPON-101",
+        "name": "Springfield Credit Union",
+        "sponsor_url": "https://www.example-creditunion.test"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-002",
+    "address": {
+      "street": "200 Oak Avenue",
+      "city": "Shelbyville",
+      "state": "IL",
+      "zip_code": "62565"
+    },
+    "price": 340000,
+    "bedrooms": 4,
+    "bathrooms": 2.5,
+    "square_feet": 2100,
+    "amenities": [
+      "Central AC",
+      "Fenced Yard",
+      "Solar Panels"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SPON-102",
+        "name": "Shelbyville Home Realty",
+        "sponsor_url": "https://www.example-shelbyvillerealty.test"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-003",
+    "address": {
+      "street": "300 Pine Road",
+      "city": "Capital City",
+      "state": "OH",
+      "zip_code": "43215"
+    },
+    "price": 195000,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "square_feet": 950,
+    "amenities": [
+      "Balcony",
+      "Dishwasher"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SPON-103",
+        "name": "Capital Title Services",
+        "sponsor_url": "https://www.example-capitaltitle.test"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-004",
+    "address": {
+      "street": "400 Elm Boulevard",
+      "city": "Ogdenville",
+      "state": "UT",
+      "zip_code": "84401"
+    },
+    "price": 420000,
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "square_feet": 2800,
+    "amenities": [
+      "Swimming Pool",
+      "Fireplace",
+      "Three-Car Garage"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SPON-104",
+        "name": "Ogdenville Mortgage Group",
+        "sponsor_url": "https://www.example-ogdenvillemortgage.test"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-005",
+    "address": {
+      "street": "500 Cedar Lane",
+      "city": "North Haverbrook",
+      "state": "ME",
+      "zip_code": "04401"
+    },
+    "price": 215000,
+    "bedrooms": 3,
+    "bathrooms": 1.5,
+    "square_feet": 1250,
+    "amenities": [
+      "Covered Porch",
+      "Basement Storage"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SPON-105",
+        "name": "Haverbrook Insurance Co",
+        "sponsor_url": "https://www.example-haverbrookinsurance.test"
+      }
+    ]
+  }
+]
