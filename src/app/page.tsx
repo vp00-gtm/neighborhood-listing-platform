@@ -1,43 +1,50 @@
 import PropertyCard from "@/components/PropertyCard";
 import SearchFilters from "@/components/SearchFilters";
 import SponsorBanner from "@/components/SponsorBanner";
+import { getValidatedProperties } from "@/lib/validate-properties";
 import type { Property, Sponsor } from "@/types";
 
-const properties: Property[] = [
+const validatedProperties = getValidatedProperties();
+
+const images = [
   {
-    id: "property-1",
-    address: "125 Oak Street",
-    price: 2200,
-    bedrooms: 2,
-    bathrooms: 1,
-    squareFootage: 950,
-    imageUrl: "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
+    imageUrl:
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994",
     imageAlt: "White two-story house with a front lawn",
-    propertyUrl: "/properties/property-1",
   },
   {
-    id: "property-2",
-    address: "48 Maple Avenue",
-    price: 2750,
-    bedrooms: 3,
-    bathrooms: 2,
-    squareFootage: 1350,
-    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    imageUrl:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
     imageAlt: "Modern home with large windows and a landscaped yard",
-    propertyUrl: "/properties/property-2",
   },
   {
-    id: "property-3",
-    address: "902 Pine Road",
-    price: 3200,
-    bedrooms: 4,
-    bathrooms: 2.5,
-    squareFootage: 1850,
-    imageUrl: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+    imageUrl:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
     imageAlt: "Modern gray house with a driveway and front yard",
-    propertyUrl: "/properties/property-3",
+  },
+ {
+  imageUrl:
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+  imageAlt: "Modern house with a landscaped front yard",
+},
+  {
+    imageUrl:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+    imageAlt: "Contemporary home with large windows",
   },
 ];
+
+const properties: Property[] = validatedProperties.map((property, index) => ({
+  id: property.property_id,
+  address: `${property.address.street}, ${property.address.city}, ${property.address.state} ${property.address.zip_code}`,
+  price: property.price,
+  bedrooms: property.bedrooms,
+  bathrooms: property.bathrooms,
+  squareFootage: property.square_feet,
+  imageUrl: images[index % images.length].imageUrl,
+  imageAlt: images[index % images.length].imageAlt,
+  propertyUrl: `/properties/${property.property_id}`,
+}));
 
 const sponsor: Sponsor = {
   id: "sponsor-1",
