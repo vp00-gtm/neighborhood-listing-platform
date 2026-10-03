@@ -1,0 +1,127 @@
+[
+  {
+    "property_id": "P001",
+    "address": {
+      "street": "125 Maple Avenue",
+      "city": "Riverside",
+      "state": "CA",
+      "zip_code": "92501"
+    },
+    "price": 2450,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "square_feet": 1100,
+    "amenities": [
+      "parking",
+      "laundry",
+      "central air"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "S001",
+        "name": "Maple Street Coffee",
+        "sponsor_url": "https://example.com/maple-coffee"
+      }
+    ]
+  },
+  {
+    "property_id": "P002",
+    "address": {
+      "street": "842 Oak Street",
+      "city": "Pasadena",
+      "state": "CA",
+      "zip_code": "91101"
+    },
+    "price": 3100,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1450,
+    "amenities": [
+      "garage",
+      "dishwasher",
+      "patio"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "S002",
+        "name": "Oak Corner Market",
+        "sponsor_url": "https://example.com/oak-market"
+      }
+    ]
+  },
+  {
+    "property_id": "P003",
+    "address": {
+      "street": "317 Pine Road",
+      "city": "Glendale",
+      "state": "CA",
+      "zip_code": "91203"
+    },
+    "price": 2750,
+    "bedrooms": 2,
+    "bathrooms": 1.5,
+    "square_feet": 1200,
+    "amenities": [
+      "pool",
+      "laundry",
+      "balcony"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "S003",
+        "name": "Pine Road Bakery",
+        "sponsor_url": "https://example.com/pine-bakery"
+      }
+    ]
+  },
+  {
+    "property_id": "P004",
+    "address": {
+      "street": "590 Cedar Lane",
+      "city": "Burbank",
+      "state": "CA",
+      "zip_code": "91502"
+    },
+    "price": 2200,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "square_feet": 850,
+    "amenities": [
+      "parking",
+      "storage",
+      "air conditioning"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "S004",
+        "name": "Cedar Lane Books",
+        "sponsor_url": "https://example.com/cedar-books"
+      }
+    ]
+  },
+  {
+    "property_id": "P005",
+    "address": {
+      "street": "1042 Willow Drive",
+      "city": "Ontario",
+      "state": "CA",
+      "zip_code": "91764"
+    },
+    "price": 2950,
+    "bedrooms": 3,
+    "bathrooms": 2.5,
+    "square_feet": 1600,
+    "amenities": [
+      "garage",
+      "pool",
+      "fireplace"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "S005",
+        "name": "Willow Drive Fitness",
+        "sponsor_url": "https://example.com/willow-fitness"
+      }
+    ]
+  }
+]
