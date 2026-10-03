@@ -42,3 +42,19 @@ The application is deployed on Vercel:
 
 https://neighborhood-listing-platform-mu.vercel.app/
 
+
+
+
+## Lab 2 Component Hierarchy
+
+Page
+│
+├── SearchFilters
+│
+├── Listing Grid
+│   ├── PropertyCard
+│   ├── PropertyCard
+│   └── PropertyCard
+│
+└── SponsorBanner
+
