@@ -190,3 +190,19 @@ The AI Studio response was treated as a proposal rather than automatically accep
 
 An AI Studio screenshot was captured showing the prompt and generated schema. Personal information and private data were excluded from the evidence.
 
+
+## Prompt and Schema Improvement
+
+The initial AI-generated schema was treated as a proposal and was reviewed against the assignment requirements before being used by the application.
+
+The final local schema was strengthened and verified with Ajv to enforce the required data constraints. The validation layer identified malformed records without silently changing their values.
+
+The validation tests demonstrated which schema rules addressed each invalid case:
+
+- Missing property_id was rejected by the required rule.
+- Negative price was rejected by the minimum rule.
+- An invalid ZIP code was rejected by the pattern rule.
+- An unknown property field was rejected by additionalProperties: false.
+
+The AI-generated response was preserved as raw synthetic output, while the locally maintained schema served as the verified application data contract. This separation allowed the project to improve and verify the schema without silently editing the generated data.
+
